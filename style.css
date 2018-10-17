@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+}
+/*First part of the website*/
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 7fr;
+  grid-auto-columns: 1fr;
+  background-color: rgba(60, 60, 60, 0.6);
+  z-index: -1;
+}
+
+.grid-container img {
+  width: 100%;
+  height: 100%;
+  grid-area: 1 / 1 / 4 / 2;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.grid-infobar {
+  grid-area: 1 / 1 / 2 / 2;
+  color: white;
+  padding: 30px 50px 30px 50px;
+  font-size: 11px;
+  word-spacing: 1em;
+  font-family: sans-serif;
+  align-self: center;
+}
+
+.icons {
+  float: right;
+  font-size: 16px;
+}
+
+.grid-navbar {
+  grid-area: 2 / 1 / 3 / 2;
+  color: white;
+  background-color: rgba(5, 5, 5, 0.6);
+  align-self: center;
+}
+.grid-navbar ul {
+  text-align: right;
+  padding: 15px 50px 15px 0px;
+  word-spacing: 1em;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.grid-navbar ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+.frontpage {
+  grid-area: 3 / 1 / 4 / 2;
+  color: white;
+  padding-left: 60px;
+  align-self: center;
+}
+
+.frontpage h1 {
+  font-size: 45px;
+  font-weight: lighter;
+  padding-bottom: 20px
+}
+
+.frontpage p {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-bottom: 40px;
+}
+
+.frontpage button {
+  color: white;
+  font-family: sans-serif;
+  background-color: rgb(64,224,208);
+  padding: 15px 10px;
+  border: none;
+}
+/*Second part of the website: infocards*/
+.infocards {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr 1fr 1fr;
+  background-color: white;
+  align-self: center;
+  padding: 80px 100px;
+}
+
+.infocards img {
+  min-height: 200px;
+  max-height: 250px;
+  height: 60%;
+  width: 100%;
+  /*object-fit: cover;*/
+}
+
+.infocards h2 {
+  font-weight: lighter;
+  padding-top: 15px;
+}
+
+.infocards p {
+  font-family: sans-serif;
+  color: rgb(100, 100, 100);
+  line-height: 1.5;
+}
+
+.infocards button {
+  color: rgb(64,224,208);
+  background-color: white;
+  border: none;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.card1 {
+  grid-area: 1 / 1 / 2 / 2;
+  padding-right: 10px;
+}
+
+.card2 {
+  grid-area: 1 / 2 / 2 / 3;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.card3 {
+  grid-area: 1 / 3 / 2 / 4;
+  padding-left: 10px;
+}
+/* Infopage which consist of 8 elements on the grid */
+.infopage {
+  display: grid;
+  grid-auto-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  color: white;
+}
+.infopage img {
+  width: 100%;
+  grid-area: 1 / 1 / 5 / 4;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.infopage h2 {
+  font-weight: lighter;
+}
+
+.infopage p {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.infopage button {
+  color: white;
+  background-color: Transparent;
+  border: none;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.title {
+  grid-area: 1 / 1 / 2 / 4;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.part1 {
+  grid-area: 2 / 1 / 3 / 2;
+  padding-left: 60px;
+  padding-right: 10px;
+}
+
+.part2 {
+  grid-area: 2 / 2 / 3 / 3;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.part3 {
+  grid-area: 2 / 3 / 3 / 4;
+  padding-right: 60px;
+  padding-left: 10px;
+}
+
+.part4 {
+  grid-area: 3 / 1 / 4 / 2;
+  padding-left: 60px;
+  padding-right: 10px;
+}
+
+.part5 {
+  grid-area: 3 / 2 / 4 / 3;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.part6 {
+  grid-area: 3 / 3 / 4 / 4;
+  padding-right: 60px;
+  padding-left: 10px;
+}
+
+.mainbutton {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.mainbutton button {
+  color: white;
+  font-family: sans-serif;
+  background-color: rgb(64,224,208);
+  border: none;
+  align-self: center;
+  padding: 15px 10px;
+  object-position: center;
+  justify-content: center;
+}
